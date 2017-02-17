@@ -1,6 +1,7 @@
 import React from 'react'
 import FacebookLogin from 'react-facebook-login';
 var LayoutPage = React.createClass({
+
 	render : function(){
 	return(
 	<div className="container-fluid height100">

@@ -1,10 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html class="height100">
   <head>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/styles.css">
+    <script type="text/javascript" src="/bootstrap.min.js"></script>
     <title>Sample App</title>
-  <link href="styles-b6ec10e45716013063b1.css" rel="stylesheet"></head>
-  <body>
-    <div id='root'></div>
-  <script type="text/javascript" src="javascripts-b6ec10e45716013063b1.js"></script></body>
+
+  </head>
+  <script type="text/javascript">
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '407830199562454',
+          xfbml      : true,
+          version    : 'v2.8'
+        });
+       // FB.AppEvents.logPageView();
+      };
+
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/en_US/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+    
+  </script>
+  <body class="height100">
+    <div id='root' class="height100" ></div>
+  </body>
+  <script src = "/build.js"></script>
+
 </html>

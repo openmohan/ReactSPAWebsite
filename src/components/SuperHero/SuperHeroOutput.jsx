@@ -11,7 +11,7 @@ var SuperHeroOutput = React.createClass({
 	var heroURL = "SuperHero/"
 	return(
 		<div>
-		  Welcome 
+		  Welcome s
 		  {_.get(this.props,'basic.profileInfo.name',"User")}
 		  <img src={_.get(this.props,'basic.profileInfo.picture.data.url',"")} />
 		  <br/>

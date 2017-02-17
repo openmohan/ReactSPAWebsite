@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build-prod": "webpack --config webpack.config.prod.js --progress",
-    "start": "node dev-server.js"
+    "start": "webpack-dev-server --hot"
   },
   "keywords": [],
   "author": "",

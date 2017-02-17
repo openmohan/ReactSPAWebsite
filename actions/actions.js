@@ -27,7 +27,7 @@ export function getLoginInfo(){
 	var status = JSON.parse(string)
 	if(status.status=="connected"){
 		console.log("found")
-		browserHistory.push('/myApp/questions');
+		browserHistory.push('/superhero/questions');
 		var logininfo={
 		type:LOGIN,
 		data : status
@@ -59,7 +59,7 @@ export function getLoginInfo(){
 export function getUserInfo(status){
 		if(status.status=="connected"){
 			console.log("found")
-			browserHistory.push('/myApp/Avengers/questions');
+			browserHistory.push('/superhero/output');
 			var logininfo={
 			type:LOGIN,
 			data : status

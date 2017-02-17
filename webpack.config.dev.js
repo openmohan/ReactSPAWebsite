@@ -15,6 +15,11 @@ module.exports = {
     filename: 'bundle.js',
     publicPath: '/'
   },
+  devServer: {
+      historyApiFallback: true,
+      contentBase: './',
+      hot: true
+    },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
@@ -26,8 +31,22 @@ module.exports = {
     loaders: [{
       test: /\.js$/,
       loaders: ['react-hot', 'babel'],
-      include: path.join(__dirname, 'src')
-    }, {
+      include: path.join(__dirname, ''),
+      exclude: path.join(__dirname, 'node_modules')
+    }, 
+    {
+       test: /\.jsx?$/,
+       exclude: /node_modules/,
+       loader: 'babel-loader',
+       include: path.join(__dirname, ''),
+       exclude: path.join(__dirname, 'node_modules'),
+
+
+    
+       query: {
+          presets: ['es2015', 'react']
+       }},
+    {
       test: /\.css$/,
       loader: combineLoaders([
         {
