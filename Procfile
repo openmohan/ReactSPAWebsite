@@ -1,1 +1,1 @@
-web: webpack-dev-server --hot
+web: ./node_modules/.bin/webpack-dev-server --hot
