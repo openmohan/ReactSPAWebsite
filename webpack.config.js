@@ -1,4 +1,5 @@
 var combineLoaders = require('webpack-combine-loaders');
+var path = require('path');
 
 var config = {
    entry: './src/index.js',
@@ -20,7 +21,7 @@ devServer: {
             test: /\.jsx?$/,
             exclude: /node_modules/,
             loader: "babel-loader",
-				
+				    exclude: path.join(__dirname, 'node_modules')
             query: {
                presets: ['es2015', 'react']
             }
