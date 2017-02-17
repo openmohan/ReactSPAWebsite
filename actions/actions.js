@@ -13,7 +13,7 @@ var superHero = {
 	6:{name:"Vision",img:"vision.jpg"},
 	7:{name:"Wanda",img:"wanda.jpg"},
 	8:{name:"Star lord",img:"starlord.jpg"},
-	9:{name:"Falcon",img:"ironman.jpg"},
+	9:{name:"Falcon",img:"falcon.jpg"},
 	10:{name:"Thor",img:"thor.jpg"},
 	11:{name:"Iron Man",img:"ironman.jpg"},
 	12:{name:"Captain America",img:"captain.jpg"},
