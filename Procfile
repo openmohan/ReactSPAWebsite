@@ -1,1 +1,1 @@
-web: ./node_modules/.bin/webpack-dev-server --hot --port process.env.PORT
+web: ./node_modules/.bin/webpack-dev-server --hot --port $PORT
