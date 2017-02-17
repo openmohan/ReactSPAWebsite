@@ -21,7 +21,7 @@ devServer: {
             test: /\.jsx?$/,
             exclude: /node_modules/,
             loader: "babel-loader",
-				    exclude: path.join(__dirname, 'node_modules')
+				    exclude: path.join(__dirname, 'node_modules'),
             query: {
                presets: ['es2015', 'react']
             }
